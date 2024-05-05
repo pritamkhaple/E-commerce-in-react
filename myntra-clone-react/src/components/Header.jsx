@@ -1,3 +1,9 @@
+import { CgProfile } from "react-icons/cg";
+import { FaHeart } from "react-icons/fa";
+import { IoBagHandleSharp } from "react-icons/io5";
+
+
+
 export const Header = () =>{
     return<>
         <header>
@@ -18,18 +24,15 @@ export const Header = () =>{
         </div>
         <div className="action_bar">
             <div className="action_container">
-                <span className="material-symbols-outlined action_icon">person</span>
-                <span className="action_name">Profile</span>
+                <span className="action_name"><CgProfile />Profile</span>
             </div>
 
             <div className="action_container">
-                <span className="material-symbols-outlined action_icon">favorite</span>
-                <span className="action_name">Wishlist</span>
+                <span className="action_name"><FaHeart />Wishlist</span>
             </div>
 
             <a className="action_container" href="pages/bag.html">
-                <span className="material-symbols-outlined action_icon">shopping_bag</span>
-                <span className="action_name">Bag</span>
+                <span className="action_name"><IoBagHandleSharp />Bag</span>
                 <span className="bag-item-count">0</span>
             </a>
         </div>
